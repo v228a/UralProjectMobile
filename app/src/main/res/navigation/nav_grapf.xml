@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grapf"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.vovka.uralprojectmobile.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_glavnayaFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:destination="@id/glavnayaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/glavnayaFragment"
+        android:name="com.vovka.uralprojectmobile.GlavnayaFragment"
+        android:label="fragment_glavnaya"
+
+        tools:layout="@layout/fragment_glavnaya" >
+        <action
+            android:id="@+id/action_glavnayaFragment_to_operationFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/operationFragment" />
+        <action
+            android:id="@+id/action_glavnayaFragment_to_profileFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_glavnayaFragment_to_supportFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/supportFragment" />
+        <action
+            android:id="@+id/action_glavnayaFragment_to_historyFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/historyFragment" />
+        <action
+            android:id="@+id/action_glavnayaFragment_to_walletDepositFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/walletDepositFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/operationFragment"
+        android:name="com.vovka.uralprojectmobile.OperationFragment"
+        android:label="fragment_operation"
+        tools:layout="@layout/fragment_operation" >
+        <action
+            android:id="@+id/action_operationFragment_to_paygetFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/paygetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paygetFragment"
+        android:name="com.vovka.uralprojectmobile.PaygetFragment"
+        android:label="fragment_payget"
+        tools:layout="@layout/fragment_payget" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.vovka.uralprojectmobile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_referalFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/referalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/referalFragment"
+        android:name="com.vovka.uralprojectmobile.ReferalFragment"
+        android:label="fragment_referal"
+        tools:layout="@layout/fragment_referal" />
+    <fragment
+        android:id="@+id/supportFragment"
+        android:name="com.vovka.uralprojectmobile.SupportFragment"
+        android:label="SupportFragment" >
+        <action
+            android:id="@+id/action_supportFragment_to_chatFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/depositAddFragment"
+        android:name="com.vovka.uralprojectmobile.DepositAddFragment"
+        android:label="DepositAddFragment" />
+    <fragment
+        android:id="@+id/withdrawCreateFragment"
+        android:name="com.vovka.uralprojectmobile.withdrawCreateFragment"
+        android:label="withdrawCreateFragment" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.vovka.uralprojectmobile.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.vovka.uralprojectmobile.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_depositPlusFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/depositPlusFragment" />
+        <action
+            android:id="@+id/action_historyFragment_to_depositMinusFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/depositMinusFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/walletDepositFragment"
+        android:name="com.vovka.uralprojectmobile.WalletDepositFragment"
+        android:label="WalletDepositFragment" >
+        <action
+            android:id="@+id/action_walletDepositFragment_to_depositAddFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/depositAddFragment" />
+        <action
+            android:id="@+id/action_walletDepositFragment_to_withdrawdepositFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/withdrawdepositFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detalisHistoryDoneFragment"
+        android:name="com.vovka.uralprojectmobile.DetalisHistoryDoneFragment"
+        android:label="fragment_detalis_history_fail"
+        tools:layout="@layout/fragment_detalis_history_fail" />
+    <fragment
+        android:id="@+id/depositPlusFragment"
+        android:name="com.vovka.uralprojectmobile.DepositPlusFragment"
+        android:label="fragment_deposit_minus"
+        tools:layout="@layout/fragment_deposit_minus" >
+        <action
+            android:id="@+id/action_depositPlusFragment_to_detalisHistoryDoneFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/detalisHistoryDoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/withdrawdepositFragment"
+        android:name="com.vovka.uralprojectmobile.WithdrawdepositFragment"
+        android:label="WithdrawdepositFragment" >
+        <action
+            android:id="@+id/action_withdrawdepositFragment_to_withdrawCreateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/withdrawCreateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/depositMinusFragment"
+        android:name="com.vovka.uralprojectmobile.DepositMinusFragment"
+        android:label="DepositMinusFragment" >
+        <action
+            android:id="@+id/action_depositMinusFragment_to_detailsHistoryFailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" app:destination="@id/detailsHistoryFailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsHistoryFailFragment"
+        android:name="com.vovka.uralprojectmobile.detailsHistoryFailFragment"
+        android:label="detailsHistoryFailFragment" />
+</navigation>

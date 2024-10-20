@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout13"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView345"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="8dp"
+        android:foregroundGravity="center"
+        style="@style/CustomCardViewStyleFint"
+        app:strokeColor="@color/main"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/background_grey"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardview23"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/mont700"
+            android:text="С какой операцией вам нужна \nпомощь?"
+            android:textColor="@color/black" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="11dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@color/background_grey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView12"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/mont700"
+            android:text="2392309 на 120$"
+            android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/mont800"
+        android:text="Чат поддержки"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/background_grey"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:fontFamily="@font/mont600"
+                android:text="Введите сообщение"
+                android:textColor="@color/grey_5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="@color/main"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:src="@drawable/send" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="61dp"
+        android:layout_marginBottom="24dp"
+        android:foregroundGravity="center"
+        app:cardBackgroundColor="@color/background_grey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView11"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/mont700"
+            android:text="3920323 на 1239$"
+            android:textColor="@color/black" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/square_logo"
+        app:layout_constraintEnd_toStartOf="@+id/cardView345"
+        app:layout_constraintTop_toTopOf="@+id/cardView345" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        style="@style/CustomCardViewStyle"
+        app:strokeColor="@color/main"
+        app:strokeWidth="0dp"
+        android:layout_marginBottom="24dp"
+
+        android:background="@color/main"
+        app:cardBackgroundColor="@color/main"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView345"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/mont700"
+            android:text="Нужна помощь с переводом"
+            android:textColor="@color/white" />
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

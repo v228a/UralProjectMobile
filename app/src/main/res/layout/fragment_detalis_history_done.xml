@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout14"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalisHistoryDoneFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="#6FCF97"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView31"
+        app:layout_constraintEnd_toEndOf="@+id/progressView2"
+        app:layout_constraintStart_toStartOf="@+id/progressView2"
+        app:layout_constraintTop_toBottomOf="@+id/progressView2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView31"
+        app:layout_constraintStart_toEndOf="@+id/imageView31"
+        app:layout_constraintTop_toTopOf="@+id/imageView31">
+
+        <TextView
+            android:id="@+id/textView109"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy700"
+            android:text="Пополнение выполнено"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView110"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy600"
+            android:text="24.12.2024 19:12"
+            android:textColor="@color/grey_5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/progressView2"
+        app:layout_constraintStart_toEndOf="@+id/progressView2"
+        app:layout_constraintTop_toTopOf="@+id/progressView2">
+
+        <TextView
+            android:id="@+id/textView109"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy700"
+            android:text="Пополнение обрабатывается"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView110"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy600"
+            android:text="24.12.2024 19:09"
+            android:textColor="@color/grey_5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/main"
+        android:fontFamily="@font/gilroy600"
+        android:text="Написать в поддержку"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="13dp"
+        android:layout_weight="0"
+        android:backgroundTint="@color/background_grey"
+        android:fontFamily="@font/gilroy600"
+        android:text="Подать аппеляцию"
+        android:textColor="@color/grey_5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:fontFamily="@font/mont800"
+        android:gravity="center_vertical"
+        android:text="Детали"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBack" />
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:layout_weight="0"
+        android:src="@drawable/buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressView1"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBack"
+        app:srcCompat="@drawable/frame_dcg" />
+
+    <ImageView
+
+        android:id="@+id/progressView2"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="58dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressView1"
+        app:srcCompat="@drawable/frame_bbrbr" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/progressView1"
+        app:layout_constraintStart_toEndOf="@+id/progressView1"
+        app:layout_constraintTop_toTopOf="@+id/progressView1">
+
+        <TextView
+            android:id="@+id/textView109"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy700"
+            android:text="Пополнение создано"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView110"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gilroy600"
+            android:text="24.12.2024 19:02"
+            android:textColor="@color/grey_5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="58dp"
+        android:src="@drawable/frame_2131329207"
+        app:layout_constraintStart_toStartOf="@+id/progressView2"
+        app:layout_constraintTop_toBottomOf="@+id/progressView2" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        app:cardBackgroundColor="#C7E8FD"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/progressView2"
+        app:layout_constraintEnd_toEndOf="@+id/progressView1"
+        app:layout_constraintStart_toStartOf="@+id/progressView1"
+        app:layout_constraintTop_toBottomOf="@+id/progressView1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

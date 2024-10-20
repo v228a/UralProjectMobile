@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WithdrawdepositFragment">
+
+    <ImageView
+        android:id="@+id/imageViewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/mont800"
+        android:text="Вывод средств \nс депозита"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/gilroy600"
+        android:text="Доступные для вывода:"
+        android:textColor="@color/grey_5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/gilroy700"
+        android:text="21 265 ₽"
+        android:textColor="@color/main"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/textView77"
+        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gilroy600"
+        android:text="≈ $ 250"
+        android:textColor="@color/main"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView78"
+        app:layout_constraintStart_toEndOf="@+id/textView78"
+        app:layout_constraintTop_toTopOf="@+id/textView78" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroy600"
+        android:text="На удержании (заблокированны):"
+        android:textColor="@color/grey_5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/textView78"
+        app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/mont800"
+        android:text="42 530 ₽"
+        android:textColor="@color/gray4"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView80"
+        app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/gilroy600"
+        android:text="≈ $ 500"
+        android:textColor="@color/gray4"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView81"
+        app:layout_constraintStart_toEndOf="@+id/textView81"
+        app:layout_constraintTop_toTopOf="@+id/textView81" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/gilroy600"
+        android:text="Инфомрация для вывода"
+        android:textColor="@color/grey_5"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/background_grey"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView83">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/gilroy600"
+                android:text="Доллар США (USD)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/arrow_down_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/background_grey"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/gilroy600"
+                android:text="Реквизиты"
+                android:textColor="@color/grey_5"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:cardBackgroundColor="@color/background_grey"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/gilroy600"
+                android:text="Сумма"
+                android:textColor="@color/grey_5"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/gilroy600"
+        android:text="Вывод средств"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
