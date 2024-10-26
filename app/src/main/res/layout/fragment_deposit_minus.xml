@@ -30,7 +30,7 @@
         android:layout_marginBottom="13dp"
         android:backgroundTint="@color/background_grey"
         android:text="Подать аппеляцию"
-        android:textColor="@color/black"
+        android:textColor="#bebebe"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/button12"
         app:layout_constraintEnd_toEndOf="parent"

@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="22dp"
-        android:fontFamily="@font/gilroy600"
+        android:fontFamily="@font/gilroy700"
         android:text="Счета и депозит"
         android:textColor="@color/black"
         android:textSize="28sp"
